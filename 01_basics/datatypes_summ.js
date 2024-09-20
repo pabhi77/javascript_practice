@@ -31,3 +31,30 @@ const myfunc=function(){
     console.log("hiii")
 }
  myfunc()
+
+
+
+ // memory type stack and heap stack for primitive datatypes heap for non-primitivr datatypes
+ //taking example of string which is primitive 
+
+ let myStr="abhijeet patil"
+ let anotherStr=myStr
+ anotherStr="abhi"
+
+ console.log(myStr)
+ console.log(anotherStr)//copy of variable is passed and changes are made in that copy actual value of mystr remains same 
+
+
+//in case of non primitive 
+
+myObj={
+    name:"abhiii",
+    score:80
+}
+
+let anathorObj=myObj
+anathorObj.name="sahil"
+anathorObj.score=45
+
+console.log(myObj)
+console.log(anathorObj)//value is changed in actual reference so abhii name will not remain as it is it will be changed to sahil and same with the score
