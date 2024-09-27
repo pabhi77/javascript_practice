@@ -46,3 +46,17 @@ console.log(Object.values(instaUser))
 //   ]
 console.log(instaUser.hasOwnProperty('islogged'))
 console.log(myObj.hasOwnProperty('isLogged'))
+
+
+courseInfo={
+    name:"javascript for everybody",
+    price:999,
+    time:2
+
+}
+console.log(courseInfo.name)
+
+const{price}=courseInfo//another way of accesing value of key instead of using dot operator.
+console.log(price)
+const{price:coursePrice}=courseInfo //if we want to give different name to key 
+console.log(coursePrice)
